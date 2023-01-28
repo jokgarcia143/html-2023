@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+
   <title>My Website</title>
+
 </head>
 
 <body>
@@ -159,8 +163,22 @@
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
           <h1>Address</h1>
-          <h2>Quezon City, NCR</h2>
+          <h2 id="h2-address">Quezon City, NCR</h2>
         </div>
+        <a type="button" onclick="document.getElementById('h2-address').innerHTML = 'BGC, Taguig City'" class="cta">Change Address</a>
+        
+        <div><input id="txt-num1" type="text" >Input # 1</div>
+        <div><input id="txt-num2" type="text" >Input # 2</div>
+        <h2 id="h2-sum">SUM</h2>
+        <button onclick="addTwoNumbers();">Add</button>
+        <h2 id="h2-provinces">Provinces</h2>
+        <h2 id="h2-delicacy">Delicacy</h2>
+        <h2 id="h2-all">All</h2>
+        <div><input id="txt-index" type="text" >Province Index</div>
+        <button onclick="showProvinces();">Show Provinces</button>
+        <button onclick="showProvince(2);">Show N.E</button>
+        <button onclick="showProvince();">Show Province</button>
+        <button onclick="showAll();">Show All</button>
       </div>
     </div>
   </section>
